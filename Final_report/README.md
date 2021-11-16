@@ -137,6 +137,7 @@ The Jupyter notebook for feature engineering can be found at:
 https://github.com/damayantinaik/Health_care_Fraud_Detection_Medicare/blob/main/Final_report/Prepocessing_and_Feature_Engineering_final_completed.ipynb 
 
 # 7. ML models building, Evaluation and Optimization
+
 Machine Learning models were built to predict/classify the Providers as Potential Fraud or not. Different classification algorithms were built on train dataset and evaluated on test datasets. 
 There are different types of ML classification models available in scikit-learn;  Logistic Regression, Decision Tree Classifier, Random Forest Classifier, Gradient Boosting Classifier, Support Vector Classifier, Naïve Bayes and few more. I chose to work with the first five classifiers for my problem and considered roc auc score to evaluate the model performance in all cases.
 
@@ -173,4 +174,9 @@ The table below summarizes the best Logistic regression model with its various f
 The Jupyter notebook on Model building can be found at:
 https://github.com/damayantinaik/Health_care_Fraud_Detection_Medicare/blob/main/Final_report/Model_building_final_completed.ipynb
 
+# 8. Future Recommendation
+In this project, ML models were built with < 1500 Providers, whereas there are thousands of providers. To build more efficient model, more amount of data is needed. So, my recommendation here is to collect more data for model building. There is no information regarding FDA approved diagnosis/procedure related to a disease, some resources related to that would be also very useful for better model building.  
+
+# 9. Acknowledgement
+I am very much thankful to Python community for proving very rich packages for data analysis and Machine Learning models building. I am very grateful to my mentor Yadunath Gupta with whom I have in-depth discussion regarding the project building, which helped me to complete this project taking into account many aspects of the data analysis and ML model building.    
 
