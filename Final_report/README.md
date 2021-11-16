@@ -90,6 +90,11 @@ The raw data obtained from Kaggle was not clean enough to carry out Exploratory 
 
 **Solution:** The “Yes” and “No ” were replaced with 1 and 0 respectively.
 
+# 5. Exploratory Data Analysis (EDA)
+The EDA showed 
+•	Mean IPAnnualReimbursementAmt, Mean OPAnnualReimbursementAmt: 3660, 1298
+•	Mean IPAnnualDeductibleAmt, Mean OPAnnualDeductibleAmt: 340, 377
+•	There are 9.3% Potential Fraud Providers as compared to 90.7% non-Potential Fraud Providers. Here is bar plot below showing both categories:
 
 
 
