@@ -141,6 +141,7 @@ Machine Learning models were built to predict/classify the Providers as Potentia
 There are different types of ML classification models available in scikit-learn;  Logistic Regression, Decision Tree Classifier, Random Forest Classifier, Gradient Boosting Classifier, Support Vector Classifier, Naïve Bayes and few more. I chose to work with the first five classifiers for my problem and considered roc auc score to evaluate the model performance in all cases.
 
 Below, I’ll give a brief description on the Model building:
+
 •	When ML models were built on the feature engineered processed data, all models’ roc auc scores were > 64%, however,  among all, for Logistic regression it was highest with score ~ 70%. 
 
 •	The data was highly imbalanced with
@@ -162,4 +163,14 @@ With SMORT transformed data, the performance of all models improved with once ag
 •	Finally PCA (Principal Component Analysis) was applied and Logistic Regression was built on the PCA transformed data. The model with 10 PCA component was with highest roc auc score of 76%.
 
 The table below lists all the ML models along with their roc auc score:
+
+![](https://github.com/damayantinaik/Springboard_Week_7_Capstone_Project_Netfilx/blob/main/Report/all_models.png)
+
+Among all the models, the Logistic Regression with PCA and without PCA have same roc auc score.  However, the model with PCA was chosen as best for deployment taking into consideration the run time in future if it is applied with large dataset.
+The table below summarizes the best Logistic regression model with its various features:
+![](https://github.com/damayantinaik/Springboard_Week_7_Capstone_Project_Netfilx/blob/main/Report/all_models.png)
+
+The Jupyter notebook on Model building can be found at:
+https://github.com/damayantinaik/Health_care_Fraud_Detection_Medicare/blob/main/Final_report/Model_building_final_completed.ipynb
+
 
