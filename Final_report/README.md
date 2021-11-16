@@ -93,6 +93,7 @@ The raw data obtained from Kaggle was not clean enough to carry out Exploratory 
 
 # 5. Exploratory Data Analysis (EDA)
 [Data Wrangling and EDA - Jupyter notebook](https://github.com/damayantinaik/Health_care_Fraud_Detection_Medicare/blob/main/Final_report/Data_Wrangling_and_EDA_final_completed.ipynb)
+
 The EDA showed
 
 •	Mean IPAnnualReimbursementAmt, Mean OPAnnualReimbursementAmt: 3660, 1298
@@ -130,7 +131,6 @@ https://github.com/damayantinaik/Health_care_Fraud_Detection_Medicare/blob/main/
 
 # 6. Feature Engineering
 [Preprocessing and Feature Engineering - Jupyter notebook](https://github.com/damayantinaik/Health_care_Fraud_Detection_Medicare/blob/main/Final_report/Prepocessing_and_Feature_Engineering_final_completed.ipynb )
-
 
 The feature engineering on Preprocessed data was carried out after splitting the dataset into train and test datasets:
 
