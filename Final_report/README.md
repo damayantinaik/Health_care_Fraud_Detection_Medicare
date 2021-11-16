@@ -99,6 +99,26 @@ The EDA showed
 
 •	There are 9.3% Potential Fraud Providers as compared to 90.7% non-Potential Fraud Providers. Here is bar plot below showing both categories:
 
+![](https://github.com/damayantinaik/Springboard_Week_7_Capstone_Project_Netfilx/blob/main/Report/Overall_movie_duration.png)
 
+
+•	Beneficiaries from state 40 and 48 are missing. Among all states, state-5 has maximum number of Beneficiaries (total beneficiaries: 12052), whereas state-2 has least number (total beneficiaries: 196).
+
+•	County-200 has highest number of beneficiaries (3943), whereas few counties has only 1 beneficiary.
+
+•	The category-4 in Race column is missing. Among all the categories, category-1 has maximum number of Beneficiaries. The bar plot below shows the different categories with their counts:
+
+![](https://github.com/damayantinaik/Springboard_Week_7_Capstone_Project_Netfilx/blob/main/Report/Overall_movie_duration.png)
+
+After data wrangling and Exploratory Data analysis, Beneficiary dataset was merged with Inpatient and Outpatient datasets.  The two newly formed datasets (Beneficiary + Inpatient) and (Beneficiary + Outpatient), now contain four different types of data; Numeric (not categorical), binary categorical, multiple categorical, categorical with unique values in each row. 
+The data was preprocessed as follows:
+1.	The numerical columns data was grouped under each provider and their average was taken.
+2.	The Categorical columns were handled in three different ways, grouping under each provider:
+a.	For binary category column, the fraction of one category was taken w.r.t to total was taken.
+b.	For multiple categories columns, category with maximum occurrence was taken by using mode, then dummies of those categories were obtained.
+c.	For columns with unique values, the total number of entries under each Provider was taken.  
+Finally all four groupby dataframes  were merged together, followed by merging with  Train dataset which contains Providers’ information regarding Fraud or not.  
+The jupyter notebook with Data wrangling, Exploratory Data Analysis and Preprocessing has been uploaded at the link:
+(https://github.com/damayantinaik/Health_care_Fraud_Detection_Medicare/blob/main/Final_report/Data_Wrangling_and_EDA_final_completed.ipynb)
 
 
