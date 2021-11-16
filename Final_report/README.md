@@ -164,8 +164,10 @@ The table below summarizes the best Logistic regression model with its various f
 ![](https://github.com/damayantinaik/Health_care_Fraud_Detection_Medicare/blob/main/Final_report/Best_Logistic_Regression_model.PNG)
 
 # 8. Future Recommendation
+
 In this project, ML models were built with < 1500 Providers, whereas there are thousands of providers. To build more efficient model, more amount of data is needed. So, my recommendation here is to collect more data for model building. There is no information regarding FDA approved diagnosis/procedure related to a disease, some resources related to that would be also very useful for better model building.  
 
 # 9. Acknowledgement
+
 I am very much thankful to Python community for proving very rich packages for data analysis and Machine Learning models building. I am very grateful to my mentor Yadunath Gupta with whom I have in-depth discussion regarding the project building, which helped me to complete this project taking into account many aspects of the data analysis and ML model building.    
 
