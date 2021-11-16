@@ -108,7 +108,7 @@ The EDA showed
 
 •	The category-4 in Race column is missing. Among all the categories, category-1 has maximum number of Beneficiaries. The bar plot below shows the different categories with their counts:
 
-![](https://github.com/damayantinaik/Springboard_Week_7_Capstone_Project_Netfilx/blob/main/Report/Overall_movie_duration.png)
+![](https://github.com/damayantinaik/Health_care_Fraud_Detection_Medicare/blob/main/Final_report/race_category.png)
 
 After data wrangling and Exploratory Data analysis, Beneficiary dataset was merged with Inpatient and Outpatient datasets.  The two newly formed datasets (Beneficiary + Inpatient) and (Beneficiary + Outpatient), now contain four different types of data; Numeric (not categorical), binary categorical, multiple categorical, categorical with unique values in each row. 
 The data was preprocessed as follows:
