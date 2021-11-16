@@ -116,7 +116,9 @@ The data was preprocessed as follows:
 2.	The Categorical columns were handled in three different ways, grouping under each provider:
 
   a.	For binary category column, the fraction of one category was taken w.r.t to total was taken.
+  
   b.	For multiple categories columns, category with maximum occurrence was taken by using mode, then dummies of those categories were obtained.
+  
   c.	For columns with unique values, the total number of entries under each Provider was taken.
   
 Finally all four groupby dataframes  were merged together, followed by merging with  Train dataset which contains Providers’ information regarding Fraud or not.
