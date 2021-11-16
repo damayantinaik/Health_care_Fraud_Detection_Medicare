@@ -38,9 +38,13 @@ This dataset provides claims detail filed by the Providers for Beneficiaries who
 This dataset lists Providers as Potential Fraud or not.
 
 All the four datasets are large with following rows and columns:
+
 Beneficiary: (138556, 25)
+
 Inpatient:(40474, 30)
+
 Outpatient: (517737, 27)
+
 Train: (5410, 2)
 
 
