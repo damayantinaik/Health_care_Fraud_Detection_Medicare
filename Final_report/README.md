@@ -20,7 +20,7 @@ The goal of this project is to build a Machine Learning (ML) model to predict/cl
 
 # 3. Data:
 For this project, I collected the data available in Kaggle at the following link:
-* (https://www.kaggle.com/rohitrox/healthcare-provider-fraud-detection-analysis)
+[](https://www.kaggle.com/rohitrox/healthcare-provider-fraud-detection-analysis)
 
 There are four datasets: Beneficiary, Inpatient, Outpatient and Train. Here is a short description about each dataset.
 
