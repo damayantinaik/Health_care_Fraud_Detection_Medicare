@@ -48,6 +48,7 @@ Outpatient: (517737, 27)
 Train: (5410, 2)
 
 # 4. Data Wrangling:
+[Data Wrangling and EDA Jupyter notebook](https://github.com/damayantinaik/Health_care_Fraud_Detection_Medicare/blob/main/Final_report/Data_Wrangling_and_EDA_final_completed.ipynb)
 
 The raw data obtained from Kaggle was not clean enough to carry out Exploratory Data Analysis (EDA) or further Machine Learning(ML) buildding, hence Data wrangling was carried out on them.  These are the  few issues observed  and fixed them as follows:
 
