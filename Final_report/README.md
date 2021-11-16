@@ -25,5 +25,24 @@ https://www.kaggle.com/rohitrox/healthcare-provider-fraud-detection-analysis
 
 There are four datasets: Beneficiary, Inpatient, Outpatient and Train. Here is a short description about each dataset.
 
+# A. Beneficiary data
+This dataset contains Medicare beneficiaries KYC (Know Your Customer) details; their health conditions, gender, Insurance coverage, race and region (county and state) they belong to.
+
+# B. Inpatient data
+This dataset provides claims details filed by the Providers for Beneficiaries those treated  in hospitals. It lists Physicians, admission and discharge dates, diagnosis and procedure codes, and Claim amount reimbursed. 
+
+# C. Outpatient data
+This dataset provides claims detail filed by the Providers for Beneficiaries who visited hospitals but  not admitted there for treatment.  It includes data on Physicians, Diagnosis and Procedure codes, claims amount reimbursed.
+
+# D: Train data
+This dataset lists Providers as Potential Fraud or not.
+
+All the four datasets are large with following rows and columns:
+Beneficiary: (138556, 25)
+Inpatient:(40474, 30)
+Outpatient: (517737, 27)
+Train: (5410, 2)
+
+
 
 
