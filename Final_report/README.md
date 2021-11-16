@@ -92,6 +92,7 @@ The raw data obtained from Kaggle was not clean enough to carry out Exploratory 
 **Solution:** The “Yes” and “No ” were replaced with 1 and 0 respectively.
 
 # 5. Exploratory Data Analysis (EDA)
+[Data Wrangling and EDA - Jupyter notebook](https://github.com/damayantinaik/Health_care_Fraud_Detection_Medicare/blob/main/Final_report/Data_Wrangling_and_EDA_final_completed.ipynb)
 The EDA showed
 
 •	Mean IPAnnualReimbursementAmt, Mean OPAnnualReimbursementAmt: 3660, 1298
@@ -128,6 +129,8 @@ The jupyter notebook with Data wrangling, Exploratory Data Analysis and Preproce
 https://github.com/damayantinaik/Health_care_Fraud_Detection_Medicare/blob/main/Final_report/Data_Wrangling_and_EDA_final_completed.ipynb
 
 # 6. Feature Engineering
+[Preprocessing and Feature Engineering - Jupyter notebook](https://github.com/damayantinaik/Health_care_Fraud_Detection_Medicare/blob/main/Final_report/Prepocessing_and_Feature_Engineering_final_completed.ipynb )
+
 
 The feature engineering on Preprocessed data was carried out after splitting the dataset into train and test datasets:
 
@@ -138,6 +141,7 @@ The Jupyter notebook for feature engineering can be found at:
 https://github.com/damayantinaik/Health_care_Fraud_Detection_Medicare/blob/main/Final_report/Prepocessing_and_Feature_Engineering_final_completed.ipynb 
 
 # 7. ML models building, Evaluation and Optimization
+[Model Building](https://github.com/damayantinaik/Health_care_Fraud_Detection_Medicare/blob/main/Final_report/Model_building_final_completed.ipynb)
 
 Machine Learning models were built to predict/classify the Providers as Potential Fraud or not. Different classification algorithms were built on train dataset and evaluated on test datasets. 
 There are different types of ML classification models available in scikit-learn;  Logistic Regression, Decision Tree Classifier, Random Forest Classifier, Gradient Boosting Classifier, Support Vector Classifier, Naïve Bayes and few more. I chose to work with the first five classifiers for my problem and considered roc auc score to evaluate the model performance in all cases.
