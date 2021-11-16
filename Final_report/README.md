@@ -52,7 +52,6 @@ Train: (5410, 2)
 The raw data obtained from Kaggle was not clean enough to carry out Exploratory Data Analysis (EDA) or further Machine Learning(ML) buildding, hence Data wrangling was carried out on them.  These are the  few issues observed  and fixed them as follows:
 
 **Problem-1:** Datetime columns were listed as object.
-
 **Solution:** These are converted to Timestamp.
 
 **Problem-2:** The renal disease indicator column has listed two values “Y” and 0. 
@@ -61,7 +60,7 @@ The raw data obtained from Kaggle was not clean enough to carry out Exploratory 
 **Problem-3:** In the ‘DOD’ column, most of the values (97%) were missing.  
 **Solution:** The entire column was dropped from the dataframe. 
 
-**Problem-4:** In all three Physicians columns (Attending Physician, Operating Physician, Other Physician), there were many null values. 
+**Problem-4:** In all three Physicians columns (Attending Physician, Operating Physician, Other Physician), there were many null values.
 **Solution:** The null values were replaced with 0 (here it was assumed that missing values represent physicians were absent, not data is missing). Also, the entries with a value were replaced with 1, thus the column became categorical.
 
 **Problem-5:** For diagnosis/procedure columns, some entries were missing. 
