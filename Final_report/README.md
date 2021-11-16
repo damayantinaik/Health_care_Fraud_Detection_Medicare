@@ -124,9 +124,6 @@ The data was preprocessed as follows:
   
 Finally all four groupby dataframes  were merged together, followed by merging with  Train dataset which contains Providers’ information regarding Fraud or not.
 
-The jupyter notebook with Data wrangling, Exploratory Data Analysis and Preprocessing has been uploaded at the link:
-https://github.com/damayantinaik/Health_care_Fraud_Detection_Medicare/blob/main/Final_report/Data_Wrangling_and_EDA_final_completed.ipynb
-
 # 6. Feature Engineering
 [Preprocessing and Feature Engineering - Jupyter notebook](https://github.com/damayantinaik/Health_care_Fraud_Detection_Medicare/blob/main/Final_report/Prepocessing_and_Feature_Engineering_final_completed.ipynb )
 
@@ -135,8 +132,6 @@ The feature engineering on Preprocessed data was carried out after splitting the
 1.	I replaced the outliers in each numeric columns with 90th percentile of that column assuming that the entries are not mistakenly entered, hence a  value at the high end >= 90 percentile was chosen to do the imputation.
 
 2.	Then all the numerical columns were standardized.
-The Jupyter notebook for feature engineering can be found at:
-https://github.com/damayantinaik/Health_care_Fraud_Detection_Medicare/blob/main/Final_report/Prepocessing_and_Feature_Engineering_final_completed.ipynb 
 
 # 7. ML models building, Evaluation and Optimization
 [Model Building - Jupyter notebook](https://github.com/damayantinaik/Health_care_Fraud_Detection_Medicare/blob/main/Final_report/Model_building_final_completed.ipynb)
@@ -173,9 +168,6 @@ The table below lists all the ML models along with their roc auc score:
 Among all the models, the Logistic Regression with PCA and without PCA have same roc auc score.  However, the model with PCA was chosen as best for deployment taking into consideration the run time in future if it is applied with large dataset.
 The table below summarizes the best Logistic regression model with its various features:
 ![](https://github.com/damayantinaik/Health_care_Fraud_Detection_Medicare/blob/main/Final_report/Best_Logistic_Regression_model.PNG)
-
-The Jupyter notebook on Model building can be found at:
-https://github.com/damayantinaik/Health_care_Fraud_Detection_Medicare/blob/main/Final_report/Model_building_final_completed.ipynb
 
 # 8. Future Recommendation
 In this project, ML models were built with < 1500 Providers, whereas there are thousands of providers. To build more efficient model, more amount of data is needed. So, my recommendation here is to collect more data for model building. There is no information regarding FDA approved diagnosis/procedure related to a disease, some resources related to that would be also very useful for better model building.  
