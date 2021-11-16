@@ -126,4 +126,13 @@ Finally all four groupby dataframes  were merged together, followed by merging w
 The jupyter notebook with Data wrangling, Exploratory Data Analysis and Preprocessing has been uploaded at the link:
 https://github.com/damayantinaik/Health_care_Fraud_Detection_Medicare/blob/main/Final_report/Data_Wrangling_and_EDA_final_completed.ipynb
 
+# 6. Feature Engineering
+
+The feature engineering on Preprocessed data was carried out after splitting the dataset into train and test datasets:
+
+1.	I replaced the outliers in each numeric columns with 90th percentile of that column assuming that the entries are not mistakenly entered, hence a  value at the high end >= 90 percentile was chosen to do the imputation.
+
+2.	Then all the numerical columns were standardized.
+The Jupyter notebook for feature engineering can be found at:
+https://github.com/damayantinaik/Health_care_Fraud_Detection_Medicare/blob/main/Final_report/Prepocessing_and_Feature_Engineering_final_completed.ipynb 
 
