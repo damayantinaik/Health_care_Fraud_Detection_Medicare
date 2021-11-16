@@ -51,7 +51,8 @@ Train: (5410, 2)
 
 The raw data obtained from Kaggle was not clean enough to carry out Exploratory Data Analysis (EDA) or further Machine Learning(ML) buildding, hence Data wrangling was carried out on them.  These are the  few issues observed  and fixed them as follows:
 
-**Problem-1:** Datetime columns were listed as object.  **Solution:** These are converted to Timestamp.
+**Problem-1:** Datetime columns were listed as object.  
+**Solution:** These are converted to Timestamp.
 
 
 **Problem-2:** The renal disease indicator column has listed two values “Y” and 0.
