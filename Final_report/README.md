@@ -47,6 +47,35 @@ Outpatient: (517737, 27)
 
 Train: (5410, 2)
 
+# 4. Data Wrangling:
+
+The raw data obtained from Kaggle was not clean enough to carry out Exploratory Data Analysis (EDA) or further Machine Learning(ML) buildding, hence Data wrangling was carried out on them.  These are the  few issues observed  and fixed them as follows:
+
+**Problem-1:** Datetime columns were listed as object.
+**Solution:** These are converted to Timestamp.
+
+Problem-2: The renal disease indicator column has listed two values “Y” and 0. 
+Solution: The “Y” was assigned to 1 and then the converted to converted to numeric.
+
+Problem-3: In the ‘DOD’ column, most of the values (97%) were missing.  
+Solution: The entire column was dropped from the dataframe. 
+
+Problem-4: In all three Physicians columns (Attending Physician, Operating Physician, Other Physician), there were many null values. 
+Solution: The null values were replaced with 0 (here it was assumed that missing values represent physicians were absent, not data is missing). Also, the entries with a value were replaced with 1, thus the column became categorical.
+
+Problem-5: For diagnosis/procedure columns, some entries were missing. 
+Solution: The missing values were replaced with 0 (assuming diagnosis/procedures were really not carried out, because for a treatment all diagnosis/procedures need not have to be carried out). The entries values were replaced with 1.
+
+Problem-6: The Gender column values were 1 and 2. 
+Solution: The entries with 2 were replaced with 0.
+
+Problem-7: In Inpatient dataset, few of the Deductible amount paid entries were missing, these null values were constituting only 2% of the total. 
+Solution: The null values were replaced with median in that column because the entries in that column was only one value, hence its mean, median and mode were same. 
+
+Problem-8: The Potential Fraud column had two values “Yes” and “No”.
+Solution: The “Yes” and “No ” were replaced with 1 and 0 respectively.
+
+
 
 
 
