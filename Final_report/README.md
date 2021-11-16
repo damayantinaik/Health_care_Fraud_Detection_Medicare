@@ -18,4 +18,10 @@ e) Billing for a covered service when the service actually provided was not cove
 # 2. Problem Statement
 The goal of this project is to build a Machine Learning (ML) model to predict/classify a Health Care Provider as Potential Fraud or not based on the claims filed by the Provider.  To obtain the best model, different ML classifier models will be built and evaluated using ROC AUC score (Receiver Operating Characteristic - Area Under Curve score) and the model with highest score will be chosen for deployment. 
 
+# 3. Data:
+For this project, I collected the data available in Kaggle at the following link:
+* (https://www.kaggle.com/rohitrox/healthcare-provider-fraud-detection-analysis)
+There are four datasets: Beneficiary, Inpatient, Outpatient and Train. Here is a short description about each dataset.
+
+
 
