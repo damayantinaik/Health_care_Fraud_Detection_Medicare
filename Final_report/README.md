@@ -104,7 +104,6 @@ The EDA showed
 
 ![](https://github.com/damayantinaik/Health_care_Fraud_Detection_Medicare/blob/main/Final_report/fraud_category.png)
 
-
 •	Beneficiaries from state 40 and 48 are missing. Among all states, state-5 has maximum number of Beneficiaries (total beneficiaries: 12052), whereas state-2 has least number (total beneficiaries: 196).
 
 •	County-200 has highest number of beneficiaries (3943), whereas few counties has only 1 beneficiary.
