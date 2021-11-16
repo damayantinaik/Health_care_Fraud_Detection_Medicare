@@ -168,7 +168,7 @@ The table below lists all the ML models along with their roc auc score:
 
 Among all the models, the Logistic Regression with PCA and without PCA have same roc auc score.  However, the model with PCA was chosen as best for deployment taking into consideration the run time in future if it is applied with large dataset.
 The table below summarizes the best Logistic regression model with its various features:
-![](https://github.com/damayantinaik/Springboard_Week_7_Capstone_Project_Netfilx/blob/main/Report/all_models.png)
+![](https://github.com/damayantinaik/Health_care_Fraud_Detection_Medicare/blob/main/Final_report/Best_Logistic_Regression_model.PNG)
 
 The Jupyter notebook on Model building can be found at:
 https://github.com/damayantinaik/Health_care_Fraud_Detection_Medicare/blob/main/Final_report/Model_building_final_completed.ipynb
