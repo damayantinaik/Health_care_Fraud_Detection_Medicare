@@ -136,3 +136,30 @@ The feature engineering on Preprocessed data was carried out after splitting the
 The Jupyter notebook for feature engineering can be found at:
 https://github.com/damayantinaik/Health_care_Fraud_Detection_Medicare/blob/main/Final_report/Prepocessing_and_Feature_Engineering_final_completed.ipynb 
 
+# 7. ML models building, Evaluation and Optimization
+Machine Learning models were built to predict/classify the Providers as Potential Fraud or not. Different classification algorithms were built on train dataset and evaluated on test datasets. 
+There are different types of ML classification models available in scikit-learn;  Logistic Regression, Decision Tree Classifier, Random Forest Classifier, Gradient Boosting Classifier, Support Vector Classifier, Naïve Bayes and few more. I chose to work with the first five classifiers for my problem and considered roc auc score to evaluate the model performance in all cases.
+
+Below, I’ll give a brief description on the Model building:
+•	When ML models were built on the feature engineered processed data, all models’ roc auc scores were > 64%, however,  among all, for Logistic regression it was highest with score ~ 70%. 
+
+•	The data was highly imbalanced with
+ 	Potential Fraud cases (No): 90%
+Potential Fraud cases (Yes): 10%   
+Hence SMORT (Synthetic Minority Oversampling Technique) was applied on the data, made the data balanced, and all the  Models were rebuilt.
+With SMORT transformed data, the performance of all models improved with once again Logistic Regression with highest roc auc score 76%.
+
+•	Henceforth, further model building was carried out on SMORT transformed data.
+
+•	As Logistic regression was with highest performance, GridSearchCV and RandomizedSearchCV were applied to obtain the best Logistic Regression performance and the related hyperparameters.  GridSeachCV could calculate the highest performance Logistic Regression with roc auc score of 76%.
+
+
+•	To improve the model running time and performance, Best Features (i.e most important features) were sorted out and applied to Logistic Regression to obtain maximum performance  and see how many features give the maximum performance. During this exploration I noted that there are many constant and quasi-constant features(columns), which needed to be dropped from the dataset. I cleaned the dataset again dropping the constant and quasi-constant features.
+
+•	All five ML models were again built on cleaned data and again Logistic regression performance was highest with roc auc score 76%.
+
+
+•	Finally PCA (Principal Component Analysis) was applied and Logistic Regression was built on the PCA transformed data. The model with 10 PCA component was with highest roc auc score of 76%.
+
+The table below lists all the ML models along with their roc auc score:
+
