@@ -169,5 +169,5 @@ In this project, ML models were built with < 1500 Providers, whereas there are t
 
 # 9. Acknowledgement
 
-I am very much thankful to Python community for proving very rich packages for data analysis and Machine Learning models building. I am very grateful to my mentor Yadunath Gupta with whom I have in-depth discussion regarding the project building, which helped me to complete this project taking into account many aspects of the data analysis and ML model building.    
+I am very much thankful to Python community for providing very rich packages for data analysis and Machine Learning models building. I am very grateful to my mentor Yadunath Gupta with whom I have in-depth discussion regarding the project building, which helped me to complete this project taking into account many aspects of the data analysis and ML model building.    
 
