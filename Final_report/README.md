@@ -138,7 +138,7 @@ Below, I’ll give a brief description on the Model building:
 •	The data was highly imbalanced with
  	Potential Fraud cases (No): 90%
 Potential Fraud cases (Yes): 10%   
-Hence SMORT (Synthetic Minority Oversampling Technique) was applied on the data, made the data balanced, and all the  Models were rebuilt.
+Hence SMOTE (Synthetic Minority Oversampling Technique) was applied on the data, made the data balanced, and all the  Models were rebuilt.
 With SMORT transformed data, the performance of all models improved with once again Logistic Regression with highest roc auc score 76%.
 
 •	Henceforth, further model building was carried out on SMOTE transformed data.
