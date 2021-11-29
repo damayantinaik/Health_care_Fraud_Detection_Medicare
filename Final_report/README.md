@@ -141,7 +141,7 @@ Potential Fraud cases (Yes): 10%
 Hence SMORT (Synthetic Minority Oversampling Technique) was applied on the data, made the data balanced, and all the  Models were rebuilt.
 With SMORT transformed data, the performance of all models improved with once again Logistic Regression with highest roc auc score 76%.
 
-•	Henceforth, further model building was carried out on SMORT transformed data.
+•	Henceforth, further model building was carried out on SMOTE transformed data.
 
 •	As Logistic regression was with highest performance, GridSearchCV and RandomizedSearchCV were applied to obtain the best Logistic Regression performance and the related hyperparameters.  GridSeachCV could calculate the highest performance Logistic Regression with roc auc score of 76%.
 
