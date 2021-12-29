@@ -145,7 +145,7 @@ With SMOTE transformed data, the performance of all models improved in terms of 
 
 •	To improve the model performance, Best Features (i.e most important features) were sorted out and applied to Logistic Regression. During this exploration, I noted that there are many constant and quasi-constant features(columns), which needed to be dropped from the dataset. I cleaned the dataset again dropping the constant and quasi-constant features.
 
-•	All five ML models were again built on cleaned data and Logistic regression performance was highest with roc auc score 85% and Recall value:64%.
+•	All five ML models were again built on cleaned data and Logistic regression performance was highest with roc auc score 85% and Recall value: 64%.
 
 •	To improve the run time and performance of the Logistic Regression (it's performance was highest among all),  PCA (Principal Component Analysis) was applied.  The model with n_components = 10 was with highest roc auc score of 85% and recall 65%.
 
