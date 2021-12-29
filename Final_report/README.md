@@ -129,36 +129,31 @@ The feature engineering on Preprocessed data was carried out after splitting the
 [Model Building - Jupyter notebook](https://github.com/damayantinaik/Health_care_Fraud_Detection_Medicare/blob/main/Final_report/Model_building_final_completed.ipynb)
 
 Machine Learning models were built to predict/classify the Providers as Potential Fraud or not. Different classification algorithms were built on train dataset and evaluated on test datasets. 
-There are different types of ML classification models available in scikit-learn;  Logistic Regression, Decision Tree Classifier, Random Forest Classifier, Gradient Boosting Classifier, Support Vector Classifier, Naïve Bayes and few more. I chose to work with the first five classifiers for my problem and considered roc auc score to evaluate the model performance in all cases.
+There are different types of ML classification models available in scikit-learn;  Logistic Regression, Decision Tree Classifier, Random Forest Classifier, Gradient Boosting Classifier, Support Vector Classifier, Naïve Bayes and few more. I chose to work with the first five classifiers for my problem and considered roc auc score and recall to evaluate the model performance in all cases.
 
 Below, I’ll give a brief description on the Model building:
 
-•	When ML models were built on the feature engineered processed data, all models’ roc auc scores were > 64%, however,  among all, for Logistic regression it was highest with score ~ 70%. 
+•	When ML models were built on the feature engineered processed data, all models’ roc auc scores were >80%, except Decision Tree classifier (roc auc score: 76%). 
 
 •	The data was highly imbalanced with
  	Potential Fraud cases (No): 90%
 Potential Fraud cases (Yes): 10%   
 Hence SMOTE (Synthetic Minority Oversampling Technique) was applied on the data, made the data balanced, and all the  Models were rebuilt.
-With SMORT transformed data, the performance of all models improved with once again Logistic Regression with highest roc auc score 76%.
+With SMOTE transformed data, the performance of all models improved in terms of recall, with Logistic Regression highest among all. 
 
 •	Henceforth, further model building was carried out on SMOTE transformed data.
 
-•	As Logistic regression was with highest performance, GridSearchCV and RandomizedSearchCV were applied to obtain the best Logistic Regression performance and the related hyperparameters.  GridSeachCV could calculate the highest performance Logistic Regression with roc auc score of 76%.
+•	To improve the model performance, Best Features (i.e most important features) were sorted out and applied to Logistic Regression. During this exploration, I noted that there are many constant and quasi-constant features(columns), which needed to be dropped from the dataset. I cleaned the dataset again dropping the constant and quasi-constant features.
 
+•	All five ML models were again built on cleaned data and Logistic regression performance was highest with roc auc score 85% and Recall value:64%.
 
-•	To improve the model running time and performance, Best Features (i.e most important features) were sorted out and applied to Logistic Regression to obtain maximum performance  and see how many features give the maximum performance. During this exploration I noted that there are many constant and quasi-constant features(columns), which needed to be dropped from the dataset. I cleaned the dataset again dropping the constant and quasi-constant features.
-
-•	All five ML models were again built on cleaned data and again Logistic regression performance was highest with roc auc score 76%.
-
-
-•	Finally PCA (Principal Component Analysis) was applied and Logistic Regression was built on the PCA transformed data. The model with 10 PCA component was with highest roc auc score of 76%.
+•	To improve the run time and performance of the Logistic Regression (it's performance was highest among all),  PCA (Principal Component Analysis) was applied.  The model with n_components = 10 was with highest roc auc score of 85% and recall 65%.
 
 The table below lists all the ML models along with their roc auc score:
 
 ![](https://github.com/damayantinaik/Health_care_Fraud_Detection_Medicare/blob/main/Final_report/all_models.PNG)
 
-Among all the models, the Logistic Regression with PCA and without PCA have same roc auc score.  However, the model with PCA was chosen as best for deployment taking into consideration the run time in future if it is applied with large dataset.
-
+The Logistic Regression model performance was highest among all ML classifier models. The LR model performance also remained same when applied to without and with PCA transformed data. In both cases, the roc auc score and run time were almost same, however in PCA case, both recall and precision values were higher. Though the run time in present dataset is same, PCA based model will be faster when applied to large dataset. Taking this also into consideration, the LR model with PCA was finally saved for deployment.  
 The table below summarizes the best Logistic regression model with its various features:
 
 ![](https://github.com/damayantinaik/Health_care_Fraud_Detection_Medicare/blob/main/Final_report/Best_Logistic_Regression_model.PNG)
