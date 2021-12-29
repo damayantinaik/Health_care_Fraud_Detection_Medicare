@@ -133,7 +133,7 @@ There are different types of ML classification models available in scikit-learn;
 
 Below, I’ll give a brief description on the Model building:
 
-•	When ML models were built on the feature engineered processed data, all models’ roc auc scores were >80%, except Decision Tree classifier (roc auc score: 76%). 
+•	When ML models were built on the feature engineered processed data, all models’ (except Decision Tree classifier) roc auc scores were >80%. 
 
 •	The data was highly imbalanced with
  	Potential Fraud cases (No): 90%
