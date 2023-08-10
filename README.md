@@ -151,7 +151,7 @@ With SMOTE transformed data, the performance of all models improved in terms of 
 
 The table below lists all the ML models along with their roc auc score:
 
-![](https://github.com/damayantinaik/Health_care_Fraud_Detection_Medicare/blob/main/Final_report/all_models.PNG)
+![](https://github.com/damayantinaik/Health_care_Fraud_Detection_Medicare/blob/main/all_ML_models.PNG)
 
 The Logistic Regression model performance was highest among all ML classifier models. The LR model performance also remained same when applied to without and with PCA transformed data. In both cases, the roc auc score and run time were almost same, however in PCA case, both recall and precision values were higher. Though the run time in present dataset is same, PCA based model will be faster when applied to large dataset. Taking this also into consideration, the LR model with PCA was finally saved for deployment.  
 The table below summarizes the best Logistic regression model with its various features:
