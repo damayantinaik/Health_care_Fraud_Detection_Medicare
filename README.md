@@ -126,7 +126,7 @@ The feature engineering on Preprocessed data was carried out after splitting the
 2.	Then all the numerical columns were standardized.
 
 # 7. ML models building, Evaluation and Optimization
-[Model Building - Jupyter notebook](https://github.com/damayantinaik/Health_care_Fraud_Detection_Medicare/blob/main/Final_report/Model_building_final_completed.ipynb)
+[Model Building - Jupyter notebook](https://github.com/damayantinaik/Health_care_Fraud_Detection_Medicare/blob/main/Model_building.ipynb)
 
 Machine Learning models were built to predict/classify the Providers as Potential Fraud or not. Different classification algorithms were built on train dataset and evaluated on test datasets. 
 There are different types of ML classification models available in scikit-learn;  Logistic Regression, Decision Tree Classifier, Random Forest Classifier, Gradient Boosting Classifier, Support Vector Classifier, Naïve Bayes and few more. I chose to work with the first five classifiers for my problem and considered roc auc score and recall to evaluate the model performance in all cases.
