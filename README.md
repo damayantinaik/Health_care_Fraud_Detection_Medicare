@@ -93,7 +93,7 @@ The EDA showed
 
 •	There are 9.3% Potential Fraud Providers as compared to 90.7% non-Potential Fraud Providers. Here is bar plot below showing both categories:
 
-![](https://github.com/damayantinaik/Health_care_Fraud_Detection_Medicare/blob/main/Final_report/fraud_category.png)
+![](https://github.com/damayantinaik/Health_care_Fraud_Detection_Medicare/blob/main/fraud_category.png)
 
 •	Beneficiaries from state 40 and 48 are missing. Among all states, state-5 has maximum number of Beneficiaries (total beneficiaries: 12052), whereas state-2 has least number (total beneficiaries: 196).
 
