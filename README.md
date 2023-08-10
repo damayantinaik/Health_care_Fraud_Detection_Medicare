@@ -83,7 +83,7 @@ The raw data obtained from Kaggle was not clean enough to carry out Exploratory 
 **Solution:** The “Yes” and “No ” were replaced with 1 and 0 respectively.
 
 # 5. Exploratory Data Analysis (EDA)
-[Data Wrangling and EDA - Jupyter notebook](https://github.com/damayantinaik/Health_care_Fraud_Detection_Medicare/blob/main/Final_report/Data_Wrangling_and_EDA_final_completed.ipynb)
+[Data Wrangling and EDA - Jupyter notebook](https://github.com/damayantinaik/Health_care_Fraud_Detection_Medicare/blob/main/Data_Wrangling_and_EDA.ipynb)
 
 The EDA showed
 
